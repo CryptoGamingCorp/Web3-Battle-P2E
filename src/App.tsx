@@ -41,7 +41,6 @@ function App() {
             <Routes>
               <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
-                <Route path="ranking" element={<Ranking />} />
                 <Route path="quest" element={<Quest />} />
                 <Route path="boost" element={<Boost />} />
                 <Route path="task" element={<Task />} />
