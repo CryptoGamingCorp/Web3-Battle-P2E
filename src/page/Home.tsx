@@ -104,7 +104,7 @@ function Home() {
     bodyRef.current && bodyRef.current.appendChild(newDiv);
     
     // Set a timeout to remove the div after 1 second
-    const interval = setTimeout(() => newDiv.remove(), 1000);
+    // const interval = setTimeout(() => newDiv.remove(), 1000);
   
     // Cleanup function to clear the timeout
     return () => clearTimeout(interval);
