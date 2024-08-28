@@ -107,7 +107,7 @@ function Home() {
     // const interval = setTimeout(() => newDiv.remove(), 1000);
   
     // Cleanup function to clear the timeout
-    return () => clearTimeout(interval);
+    // return () => clearTimeout(interval);
   };
   useEffect(() => {
     const interval = setInterval(() => {
@@ -123,15 +123,6 @@ function Home() {
 
   // };
   const [isTouching, setIsTouching] = useState(false);
-
-  const handleTouchStart = (event: React.TouchEvent<HTMLDivElement>) => {
-    if (event.touches.length === 1) {
-      setIsTouching(true);
-      handleTouch(event);
-    } else {
-      setIsTouching(false);
-    }
-  };
 
   const handleTouchEnd = () => {
     if (isTouching) {
